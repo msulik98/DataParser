@@ -74,8 +74,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Chain\Handler.cs" />
     <Compile Include="Displays\ConsoleDisplay.cs" />
-    <Compile Include="Handler.cs" />
     <Compile Include="Interfaces\IDataParser.cs" />
     <Compile Include="Interfaces\IDisplayable.cs" />
     <Compile Include="Parsers\CSVParser.cs" />
