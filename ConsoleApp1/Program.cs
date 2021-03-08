@@ -12,7 +12,7 @@ namespace DataParser
     {
         static void Main(string[] args)
         {
-            string[] files = new string[] {"file.json","file.xml","file.csv"};
+            string[] files = args.Length == 0 ? (new string[] { "file.json", "file.xml", "file.csv" }) : args;
             Handler json = new Handler(new JsonParser());
             Handler xml = new Handler(new XMLParser());
             Handler csv = new Handler(new CSVParser());
@@ -24,7 +24,7 @@ namespace DataParser
                 if(people!=null)
                     foreach (var person in people)
                     {
-                        person.Display();
+                        person.DisplayMe();
                     }
             }
         }

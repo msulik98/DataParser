@@ -8,21 +8,21 @@ namespace DataParser
 {
     public class User
     {
-        private IDisplayable display;
+        public IDisplay Display { get; set; }
         public string Email { get; set; }
         public string Surname { get; set; }
         public string Name { get; set; }
         public User()
         {
-            display = new ConsoleDisplay();
+            Display = new ConsoleDisplay();
         }
-        public User(IDisplayable displayable)
+        public User(IDisplay display)
         {
-            display = displayable;
+            Display = display;
         }
-        public void Display()
+        public void DisplayMe()
         {
-            display.DisplayUser(this);
+            Display.DisplayUser(this);
         }
     }
 }

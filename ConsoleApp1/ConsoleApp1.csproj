@@ -77,7 +77,7 @@
     <Compile Include="Chain\Handler.cs" />
     <Compile Include="Displays\ConsoleDisplay.cs" />
     <Compile Include="Interfaces\IDataParser.cs" />
-    <Compile Include="Interfaces\IDisplayable.cs" />
+    <Compile Include="Interfaces\IDisplay.cs" />
     <Compile Include="Parsers\CSVParser.cs" />
     <Compile Include="Parsers\JsonParser.cs" />
     <Compile Include="Parsers\XMLParser.cs" />

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DataParser
 {
-    public class ConsoleDisplay : IDisplayable
+    public class ConsoleDisplay : IDisplay
     {
         public void DisplayUser(User user)
         {
